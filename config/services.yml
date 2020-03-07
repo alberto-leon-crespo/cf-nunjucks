@@ -1,0 +1,4 @@
+services:
+  nunjucks:
+    class: '../services/Nunjucks'
+    arguments: ['%nunjucks', '%nunjucks%']
