@@ -4,9 +4,7 @@
   "description": "Carbonfrog nunjucks template engine component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "install": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -27,5 +25,8 @@
   "dependencies": {
     "node-dependency-injection": "^2.6.2",
     "nunjucks": "^3.2.0"
+  },
+  "devDependencies": {
+    "link-module-alias": "^1.2.0"
   }
 }
