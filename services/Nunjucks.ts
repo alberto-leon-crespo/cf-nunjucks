@@ -1,13 +1,13 @@
-import nunjucks from "nunjucks";
+import nunjucks, {Environment} from "nunjucks";
 import path from "path";
 
 export default class Nunjucks {
 
     private _nunjucks: any;
-    private _nunjucksOptions: any;
-    private _nunjucksEnvironment: any;
+    private _nunjucksOptions: object;
+    private _nunjucksEnvironment: Environment;
 
-    public constructor(nunjucks: nunjucks, config: any) {
+    public constructor(nunjucks: any, config: any) {
         this._nunjucks = nunjucks;
         this._nunjucksOptions = {
             autoscape: config.autoscape
