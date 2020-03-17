@@ -1,12 +1,13 @@
 {
   "name": "@carbonfrog/nunjucks",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Carbonfrog nunjucks template engine component",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build",
-    "publish": "npm publish dist/components/nunjucks",
+    "prepublish-build": "npm run build && npm run copy-package",
+    "copy-package": "shx cp -p package.json dist/components/nunjucks/package.json",
+    "publish": "npm run prepublish-build && npm publish dist/components/nunjucks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
