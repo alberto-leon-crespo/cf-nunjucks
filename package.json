@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build && npm run copy-package",
+    "copy-package": "shx cp -p package.json dist/components/nunjucks/package.json",
     "publish": "npm publish dist/components/nunjucks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
