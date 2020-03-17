@@ -1,11 +1,11 @@
-import nunjucks, {Environment} from "nunjucks";
+import * as nunjucks from "nunjucks";
 import path from "path";
 
 export default class Nunjucks {
 
     private _nunjucks: any;
     private _nunjucksOptions: object;
-    private _nunjucksEnvironment: Environment;
+    private _nunjucksEnvironment: nunjucks.Environment;
 
     public constructor(nunjucks: any, config: any) {
         this._nunjucks = nunjucks;
