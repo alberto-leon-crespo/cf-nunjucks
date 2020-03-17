@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "postinstall": "npm run build",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish dist/components/nunjucks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,8 +31,5 @@
     "@types/nunjucks": "^3.1.3",
     "node-dependency-injection": "^2.6.2",
     "nunjucks": "^3.2.0"
-  },
-  "devDependencies": {
-    "link-module-alias": "^1.2.0"
   }
 }
