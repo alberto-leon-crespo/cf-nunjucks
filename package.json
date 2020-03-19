@@ -1,6 +1,6 @@
 {
  "name": "@carbonfrog/nunjucks",
- "version": "0.4.4",
+ "version": "0.4.5",
  "description": "Carbonfrog nunjucks template engine component",
  "main": "index.js",
  "scripts": {
@@ -33,6 +33,7 @@
  },
  "devDependencies": {
   "npx": "^10.2.2",
+  "renamer": "^1.1.4",
   "shelljs": "^0.8.3",
   "shx": "^0.3.2"
  }
