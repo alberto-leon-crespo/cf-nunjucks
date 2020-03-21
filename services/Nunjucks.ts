@@ -1,5 +1,5 @@
 import * as nunjucks from "nunjucks";
-import path from "path";
+import * as path from "path";
 
 export default class Nunjucks {
 
