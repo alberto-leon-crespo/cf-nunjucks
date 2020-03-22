@@ -10,7 +10,7 @@ export default class Nunjucks {
     public constructor(nunjucks: any, config: any) {
         this._nunjucks = nunjucks;
         this._nunjucksOptions = {
-            autoscape: config.autoscape
+            autoescape: config.autoscape
         };
         this._nunjucksEnvironment = this._nunjucks.configure(
             path.join(path.resolve("."),
