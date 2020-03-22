@@ -1,6 +1,6 @@
 {
  "name": "@carbonfrog/nunjucks",
- "version": "0.4.18",
+ "version": "0.4.19",
  "description": "Carbonfrog nunjucks template engine component",
  "type": "module",
  "main": "./dist/commonjs/index.js",
@@ -28,7 +28,7 @@
  },
  "homepage": "https://github.com/alberto-leon-crespo/cf-nunjucks#readme",
  "dependencies": {
-  "@carbonfrog/kernel": "^0.4.18",
+  "@carbonfrog/kernel": "^0.4.19",
   "@types/node": "^13.9.1",
   "@types/nunjucks": "^3.1.3",
   "node-dependency-injection": "^2.6.2",
